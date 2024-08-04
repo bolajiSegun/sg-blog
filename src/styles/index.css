@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  background-color: #fcfcfc;
+} */
+
+.menu-bar > * {
+  @apply transition-all duration-300 py-2 px-3 hover:text-pri-hover;
+}
+.menu-bar > .is-active {
+  @apply text-white bg-pri hover:bg-pri-hover;
+}
+
+/* Basic editor styles */
+.tiptap > * + * {
+  margin-top: 0.75em !important;
+}
+
+.tiptap {
+  @apply min-h-[5rem] outline-none;
+}
+
+.tiptap ul,
+.tiptap ol {
+  padding: 0 1rem !important;
+}
+
+.title-container {
+  @apply leading-10 text-base mb-6 mt-2 min-h-[2.5rem] max-h-[7.5rem] rounded-md px-2 text-text-dark md:mb-8 ring-1 ring-inset border-0 hover:ring-pri-hover focus-within:ring-pri focus-within:ring-2 transition-all duration-300;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+.htitle {
+  visibility: hidden;
+  word-break: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow: hidden;
+}
+
+.tiptap h2 {
+  @apply leading-6 mt-[1.72rem] text-xl font-semibold text-text-dark;
+}
+.tiptap h1 {
+  @apply leading-8 mt-[1.95rem] text-2xl font-semibold text-text-dark;
+}
+.tiptap h3,
+.tiptap h4,
+.tiptap h5,
+.tiptap h6 {
+  line-height: 1.1 !important;
+}
+
+.tiptap p {
+  @apply leading-8 mt-8 text-xl break-words;
+}
+
+.tiptap code {
+  background-color: rgba(#616161, 0.1) !important;
+  color: #616161 !important;
+}
+
+.tiptap pre {
+  margin-top: 28px;
+  background: #0d0d0d !important;
+  color: #fff !important;
+  font-family: "JetBrainsMono", monospace !important;
+  padding: 0.75rem 1rem !important;
+  border-radius: 0.5rem !important;
+}
+.tiptap code {
+  color: inherit !important;
+  padding: 0 !important;
+  background: none !important;
+  font-size: 0.8rem !important;
+}
+
+.tiptap img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.tiptap blockquote {
+  padding-left: 23px !important;
+  margin-left: 20px;
+  border-left: 2px solid rgba(#0d0d0d, 0.1) !important;
+  box-shadow: rgb(36, 36, 36) 3px 0px 0px 0px inset;
+}
+.tiptap ul {
+  margin-top: 2rem !important;
+  list-style-type: disc !important;
+  margin-left: 1rem !important;
+}
+.tiptap ol {
+  margin-left: 1rem !important;
+  margin-top: 2rem !important;
+  list-style-type: decimal !important;
+}
+.tiptap ul p,
+.tiptap ol p {
+  margin: 0%;
+}
+
+.tiptap hr {
+  border: none !important;
+  border-top: 2px solid rgba(#0d0d0d, 0.1) !important;
+  margin: 2rem 0 !important;
+}
+
+.tiptap a {
+  text-decoration: underline;
+  color: blue;
+}
+
+.post-container::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
